@@ -27,26 +27,32 @@ view your books
 
 Tables
 
-Users
+Users //Rouets - post new user, put change user, delete user
    id
    name
    email
    phone_number
 
-Checkout
-   user_id
-   book_id
 
 locations seed with locations
    id
    name
    address
 
-books  seed with books
+books  seed with books  //Routes - put route for user_id
    isbn
    name
    author
    genre   
    Description
-   checkedOut
+   user_id  //null if not checked out
    location_id
+
+
+   User. hasmany(books)
+
+   book. belongsto(user)
+
+   book.hasOne(location)
+
+   location.hasMany(books)
