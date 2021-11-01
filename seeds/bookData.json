@@ -1,0 +1,75 @@
+[
+    {
+        "book_name": "Dune" ,
+        "isbn": 9781101,
+        "author": "Frank Herbert", 
+        "genre_id": "Sci-Fi" ,
+        "description": "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness.",
+        "location_id": 3,
+        "user_id": null
+    },{
+        "book_name" : "The Hobbit",
+        "isbn": 97805479,
+        "author": "J. R. R. Tolkien" , 
+        "genre": "Fantasy",
+        "description": "Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. ",
+        "location_id": 2,
+        "user_id": 1
+    },
+    {
+        "book_name": "Game of Thrones",
+        "isbn": 9780553,
+        "author": "George R. R. Martin" , 
+        "genre": "Fantasy",
+        "description": "Winter is coming. Such is the stern motto of House Stark, the northernmost of the fiefdoms that owe allegiance to King Robert Baratheon in far-off King’s Landing. There Eddard Stark of Winterfell rules in Robert’s name. There his family dwells in peace and comfort: h",
+        "location_id": 1,
+        "user_id": 1
+    },
+    {
+        "book_name": "Ready Player One",
+        "isbn": 97815247,
+        "author": "Ernest Cline" , 
+        "genre": "Science Fiction",
+        "description": "In the year 2045, reality is an ugly place. The only time Wade Watts really feels alive is when he’s jacked into the OASIS, a vast virtual world where most of humanity spends their days. When the eccentric creator of the OASIS dies, he leaves behind a series of fiendish puzzles, based on his obsession with the pop culture of decades past.",
+        "location_id": 1,
+        "user_id": 2
+        
+    },
+    {
+        "book_name": "The Judge's List",
+        "isbn": 97803855,
+        "author": "John Grisham", 
+        "genre": "Thriller",
+        "description": "As an investigator for the Florida Board on Judicial Conduct, Lacy Stoltz sees plenty of corruption among the men and women elected to the bench. In THE WHISTLER, she took on a crime syndicate that was paying millions to a crooked judge. Now, in THE JUDGE’S LIST, the crimes are even worse. The man hiding behind the black robe is not taking bribes—but he may be taking lives. THE JUDGE’S LIST—you don’t want to be on it." ,
+        "location_id": 2,
+        "user_id": 2
+    },
+    {
+        "book_name": "The Lyrics",
+        "isbn": 9781631,
+        "author": "Paul McCartney", 
+        "genre": "Autobiography" ,
+        "description": "A work of unparalleled candor and splendorous beauty, The Lyrics celebrates the creative life and the musical genius of Paul McCartney through 154 of his most meaningful songs.",
+        "location_id": 3,
+        "user_id": 3
+    },
+    {
+        "book_name": "Big Shot (Diary of a Wimpy Kid Book 16)" ,
+        "isbn":  9781419,
+        "author": "Jeff Kinney", 
+        "genre": "Young Adult",
+        "description": "In Big Shot, book 16 of the Diary of a Wimpy Kid series from #1 international bestselling author Jeff Kinney, Greg Heffley and sports just don’t mix. After a disastrous field day competition at school, Greg decides that when it comes to his athletic career, he’s officially retired. But after his mom urges him to give sports one more chance, he reluctantly agrees to sign up for basketball.",
+        "location_id": 1,
+        "user_id": 3
+        
+    },
+    {
+        "book_name": "Renegades: Born in the USA",
+        "isbn": 9780593,
+        "author": "Barack Obama and Bruce Springsteen", 
+        "genre": "Biography" ,
+        "description": "Renegades: Born in the USA is a candid, revealing, and entertaining dialogue between President Barack Obama and legendary musician Bruce Springsteen that explores everything from their origin stories and career-defining moments to our country’s polarized politics and the growing distance between the American Dream and the American reality." ,
+        "location_id": 2,
+        "user_id": 4
+    }
+]

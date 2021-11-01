@@ -3,6 +3,21 @@ const Book = require('./Book');
 const Location = require('./Location');
 const Checkout = require('./Checkout');
 
+Book.belongsTo(Location, {
+    foreignKey: 'location_id',
+  });
+  Location.hasMany(Book, {
+    foreignKey: 'location_id',
+    onDelete: "CASCADE"
+  });
+  Book.belongsTo(User, {
+    foreignKey: 'user_id',
+  });
+  User.hasMany(Book,{
+      foreignKey: 'user_id',
+      onDelete: "CASCADE"
+  });
+
 // Book.hasMany(Location, {
 //   foreignKey: 'location_id',
 // });

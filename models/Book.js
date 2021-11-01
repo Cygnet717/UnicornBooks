@@ -8,8 +8,7 @@ Book.init(
     isbn: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
+    
     },
     book_name: {
       type: DataTypes.STRING,
@@ -22,9 +21,10 @@ Book.init(
     genre: {
       type: DataTypes.STRING,
       allowNull: false,
+      defaultValue: 'book'
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     user_id: {
