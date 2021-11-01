@@ -1,7 +1,7 @@
 const User = require('./User');
 const Book = require('./Book');
 const Location = require('./Location');
-const Checkout = require('./Checkout');
+// const Checkout = require('./Checkout');
 
 Book.belongsTo(Location, {
     foreignKey: 'location_id',
@@ -15,7 +15,6 @@ Book.belongsTo(Location, {
   });
   User.hasMany(Book,{
       foreignKey: 'user_id',
-      onDelete: "CASCADE"
   });
 
 // Book.hasMany(Location, {
@@ -49,4 +48,4 @@ Book.belongsTo(Location, {
 //   foreignKey: 'driver_id',
 // });
 
-module.exports = { User, Book, Location, Checkout };
+module.exports = { User, Book, Location};

@@ -5,7 +5,7 @@
         "author": "Frank Herbert", 
         "genre_id": "Sci-Fi" ,
         "description": "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness.",
-        "location_id": 3,
+        "location_id": 1,
         "user_id": null
     },{
         "book_name" : "The Hobbit",
@@ -13,7 +13,7 @@
         "author": "J. R. R. Tolkien" , 
         "genre": "Fantasy",
         "description": "Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. ",
-        "location_id": 2,
+        "location_id": 1,
         "user_id": 1
     },
     {
@@ -41,7 +41,7 @@
         "author": "John Grisham", 
         "genre": "Thriller",
         "description": "As an investigator for the Florida Board on Judicial Conduct, Lacy Stoltz sees plenty of corruption among the men and women elected to the bench. In THE WHISTLER, she took on a crime syndicate that was paying millions to a crooked judge. Now, in THE JUDGE’S LIST, the crimes are even worse. The man hiding behind the black robe is not taking bribes—but he may be taking lives. THE JUDGE’S LIST—you don’t want to be on it." ,
-        "location_id": 2,
+        "location_id": 1,
         "user_id": 2
     },
     {
@@ -50,7 +50,7 @@
         "author": "Paul McCartney", 
         "genre": "Autobiography" ,
         "description": "A work of unparalleled candor and splendorous beauty, The Lyrics celebrates the creative life and the musical genius of Paul McCartney through 154 of his most meaningful songs.",
-        "location_id": 3,
+        "location_id": 1,
         "user_id": 3
     },
     {
@@ -69,7 +69,7 @@
         "author": "Barack Obama and Bruce Springsteen", 
         "genre": "Biography" ,
         "description": "Renegades: Born in the USA is a candid, revealing, and entertaining dialogue between President Barack Obama and legendary musician Bruce Springsteen that explores everything from their origin stories and career-defining moments to our country’s polarized politics and the growing distance between the American Dream and the American reality." ,
-        "location_id": 2,
+        "location_id": 1,
         "user_id": 4
     }
 ]

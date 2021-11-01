@@ -13,9 +13,9 @@ const seedDatabase = async () => {
     returning: true,
   });
 
- await Location.bulkCreate(locationData, {
-  individualHooks: true,
-  returning: true,
+  await Location.bulkCreate(locationData, {
+    individualHooks: true,
+    returning: true,
   });
 
   await Book.bulkCreate(bookData, {
