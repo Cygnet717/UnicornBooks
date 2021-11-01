@@ -46,5 +46,7 @@ books  seed with books
    isbn
    name
    author
-   genre
+   genre   
+   Description
+   checkedOut
    location_id
