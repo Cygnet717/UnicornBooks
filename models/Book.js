@@ -27,8 +27,12 @@ Book.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    checked_out: {
-      type: DataTypes.BOOLEAN,
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
     },
     location_id: {
       type: DataTypes.INTEGER,
