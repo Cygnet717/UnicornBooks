@@ -1,0 +1,40 @@
+[
+    {
+      "user_name": "Sal99",
+      "email": "sal@hotmail.com",
+      "phone_number": "555-555-5555",
+      "password": "password12345"
+      
+    },
+    {
+      "name": "Lernantino13",
+      "email": "lernantino@gmail.com",
+      "phone_number": "555-555-5555",
+      "password": "password12345"
+    },
+    {
+      "name": "AmikoAmiko",
+      "email": "amiko2k20@aol.com",
+      "phone_number": "555-555-5555",
+      "password": "password12345"
+    },
+    {
+        "user_name": "Johny5",
+        "email": "johny@hotmail.com",
+        "phone_number": "555-555-5555",
+        "password": "password12345"
+        
+      },
+      {
+        "name": "SammySoda",
+        "email": "SammySoda@gmail.com",
+        "phone_number": "555-555-5555",
+        "password": "password12345"
+      },
+      {
+        "name": "Reader101",
+        "email": "reader101@aol.com",
+        "phone_number": "555-555-5555",
+        "password": "password12345"
+      }
+  ]
