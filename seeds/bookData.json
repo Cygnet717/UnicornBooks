@@ -4,91 +4,62 @@
         "ISBN": "9781101658055",
         "author": "Frank Herbert", 
         "genre_id": "Sci-Fi" ,
-        "description": "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for....
-
-        When House Atreides is betrayed, the destruction of Paul’s family will set the boy on a journey toward a destiny greater than he could ever have imagined. And as he evolves into the mysterious man known as Muad’Dib, he will bring to fruition humankind’s most ancient and unattainable dream. 
-        
-        A stunning blend of adventure and mysticism, environmentalism and politics, Dune won the first Nebula Award, shared the Hugo Award, and formed the basis of what is undoubtedly the grandest epic in science fiction." ,
+        "description": "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for...."
         "location": "3",
-        "checked_out": true
+        "user_id": ""
     },{
         "Title" : "The Hobbit",
         "ISBN": "9780547928227",
         "author": "J. R. R. Tolkien" , 
         "genre": "Fantasy",
-        "description": "J.R.R. Tolkien's classic prelude to his Lord of the Rings trilogy
-
-        Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum.
-        
-        Written for J.R.R. Tolkien's own children, The Hobbit has sold many millions of copies worldwide and established itself as a modern classic.",
+        "description": "Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon. Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum.",
         "location": "2",
-        "checked_out": false
+        "user_id": ""
     },
     {
         "Title": "Game of Thrones",
         "ISBN": "9780553897845",
         "author": "George R. R. Martin" , 
         "genre": "Fantasy",
-        "description": "Winter is coming. Such is the stern motto of House Stark, the northernmost of the fiefdoms that owe allegiance to King Robert Baratheon in far-off King’s Landing. There Eddard Stark of Winterfell rules in Robert’s name. There his family dwells in peace and comfort: his proud wife, Catelyn; his sons Robb, Brandon, and Rickon; his daughters Sansa and Arya; and his bastard son, Jon Snow. Far to the north, behind the towering Wall, lie savage Wildings and worse—unnatural things relegated to myth during the centuries-long summer, but proving all too real and all too deadly in the turning of the season.
- 
-        Yet a more immediate threat lurks to the south, where Jon Arryn, the Hand of the King, has died under mysterious circumstances. Now Robert is riding north to Winterfell, bringing his queen, the lovely but cold Cersei, his son, the cruel, vainglorious Prince Joffrey, and the queen’s brothers Jaime and Tyrion of the powerful and wealthy House Lannister—the first a swordsman without equal, the second a dwarf whose stunted stature belies a brilliant mind. All are heading for Winterfell and a fateful encounter that will change the course of kingdoms.
-         
-        Meanwhile, across the Narrow Sea, Prince Viserys, heir of the fallen House Targaryen, which once ruled all of Westeros, schemes to reclaim the throne with an army of barbarian Dothraki—whose loyalty he will purchase in the only coin left to him: his beautiful yet innocent sister, Daenerys.",
+        "description": "Winter is coming. Such is the stern motto of House Stark, the northernmost of the fiefdoms that owe allegiance to King Robert Baratheon in far-off King’s Landing. There Eddard Stark of Winterfell rules in Robert’s name. There his family dwells in peace and comfort: his proud wife, Catelyn; his sons Robb, Brandon, and Rickon; his daughters Sansa and Arya; and his bastard son, Jon Snow. Far to the north, behind the towering Wall, lie savage Wildings and worse—unnatural things relegated to myth during the centuries-long summer, but proving all too real and all too deadly in the turning of the season.",
         "location": "1",
-        "checked_out": true
+        "user_id": ""
     },
     {
         "Title": "Ready Player One",
         "ISBN": "9781524761332",
         "author": "Ernest Cline" , 
         "genre": "Science Fiction",
-        "description": "In the year 2045, reality is an ugly place. The only time Wade Watts really feels alive is when he’s jacked into the OASIS, a vast virtual world where most of humanity spends their days.
-
-        When the eccentric creator of the OASIS dies, he leaves behind a series of fiendish puzzles, based on his obsession with the pop culture of decades past. Whoever is first to solve them will inherit his vast fortune—and control of the OASIS itself. 
-        
-        Then Wade cracks the first clue. Suddenly he’s beset by rivals who’ll kill to take this prize. The race is on—and the only way to survive is to win.",
+        "description": "In the year 2045, reality is an ugly place. The only time Wade Watts really feels alive is when he’s jacked into the OASIS, a vast virtual world where most of humanity spends their days. When the eccentric creator of the OASIS dies, he leaves behind a series of fiendish puzzles, based on his obsession with the pop culture of decades past. Whoever is first to solve them will inherit his vast fortune—and control of the OASIS itself. Then Wade cracks the first clue. Suddenly he’s beset by rivals who’ll kill to take this prize. The race is on—and the only way to survive is to win.",
         "location": "1",
-        "checked_out": false
+        "user_id": ""
     },
     {
         "Title": "The Judge's List",
         "ISBN": "9780385546027" ,
         "author": "John Grisham", 
         "genre": "Thriller",
-        "description": "As an investigator for the Florida Board on Judicial Conduct, Lacy Stoltz sees plenty of corruption among the men and women elected to the bench. In THE WHISTLER, she took on a crime syndicate that was paying millions to a crooked judge. Now, in THE JUDGE’S LIST, the crimes are even worse. The man hiding behind the black robe is not taking bribes—but he may be taking lives.
-    
-        THE JUDGE’S LIST—you don’t want to be on it." ,
+        "description": "As an investigator for the Florida Board on Judicial Conduct, Lacy Stoltz sees plenty of corruption among the men and women elected to the bench. In THE WHISTLER, she took on a crime syndicate that was paying millions to a crooked judge. Now, in THE JUDGE’S LIST, the crimes are even worse. The man hiding behind the black robe is not taking bribes—but he may be taking lives. THE JUDGE’S LIST—you don’t want to be on it." ,
         "location": "2",
-        "checked_out": false
+        "user_id": ""
     },
     {
         "Title": "The Lyrics",
         "ISBN": "9781631492563",
         "author": "Paul McCartney", 
         "genre": "Autobiography" ,
-        "description": "A work of unparalleled candor and splendorous beauty, The Lyrics celebrates the creative life and the musical genius of Paul McCartney through 154 of his most meaningful songs.
-        From his early Liverpool days, through the historic decade of The Beatles, to Wings and his long solo career, The Lyrics pairs the definitive texts of 154 Paul McCartney songs with first-person commentaries on his life and music. Spanning two alphabetically arranged volumes, these commentaries reveal how the songs came to be and the people who inspired them: his devoted parents, Mary and Jim; his songwriting partner, John Lennon; his “Golden Earth Girl,” Linda Eastman; his wife, Nancy McCartney; and even Queen Elizabeth, among many others. Here are the origins of “Let It Be,” “Lovely Rita,” “Yesterday,” and “Mull of Kintyre,” as well as McCartney’s literary influences, including Shakespeare, Lewis Carroll, and Alan Durband, his high-school English teacher.
-        
-        With images from McCartney’s personal archives—handwritten texts, paintings, and photographs, hundreds previously unseen—The Lyrics, spanning sixty-four years, becomes the definitive literary and visual record of one of the greatest songwriters of all time." ,
+        "description": "A work of unparalleled candor and splendorous beauty, The Lyrics celebrates the creative life and the musical genius of Paul McCartney through 154 of his most meaningful songs. From his early Liverpool days, through the historic decade of The Beatles, to Wings and his long solo career, The Lyrics pairs the definitive texts of 154 Paul McCartney songs with first-person commentaries on his life and music.",
         "location": "3",
-        "checked_out": false
+        "user_id": ""
     },
     {
         "Title": "Big Shot (Diary of a Wimpy Kid Book 16)" ,
         "ISBN":  "9781419749155",
         "author": "Jeff Kinney", 
         "genre": "Young Adult",
-        "description": "In Big Shot, book 16 of the Diary of a Wimpy Kid series from #1 international bestselling author Jeff Kinney, Greg Heffley and sports just don’t mix.
-
-        After a disastrous field day competition at school, Greg decides that when it comes to his athletic career, he’s officially retired. But after his mom urges him to give sports one more chance, he reluctantly agrees to sign up for basketball.
-        
-        Tryouts are a mess, and Greg is sure he won’t make the cut. But he unexpectedly lands a spot on the worst team.
-        
-        As Greg and his new teammates start the season, their chances of winning even a single game look slim. But in sports, anything can happen. When everything is on the line and the ball is in Greg’s hands, will he rise to the occasion? Or will he blow his big shot?
-        
-        See the Wimpy Kid World in a whole new way with the help of Greg Heffley’s best friend in the instant #1 bestsellers Diary of an Awesome Friendly Kid: Rowley Jefferson’s Journal, Rowley Jefferson’s Awesome Friendly Adventure, and Rowley Jefferson’s Awesome Friendly Spooky Stories!",
+        "description": "In Big Shot, book 16 of the Diary of a Wimpy Kid series from #1 international bestselling author Jeff Kinney, Greg Heffley and sports just don’t mix. After a disastrous field day competition at school, Greg decides that when it comes to his athletic career, he’s officially retired. But after his mom urges him to give sports one more chance, he reluctantly agrees to sign up for basketball.",
         "location": "1",
-        "checked_out": true
+        "user_id": ""
         
     },
     {
@@ -98,52 +69,294 @@
         "genre": "Biography" ,
         "description": "Renegades: Born in the USA is a candid, revealing, and entertaining dialogue between President Barack Obama and legendary musician Bruce Springsteen that explores everything from their origin stories and career-defining moments to our country’s polarized politics and the growing distance between the American Dream and the American reality. Filled with full-color photographs and rare archival material, it is a compelling and beautifully illustrated portrait of two outsiders—one Black and one white—looking for a way to connect their unconventional searches for meaning, identity, and community with the American story itself." ,
         "location": "2",
-        "checked_out": true
+        "user_id": ""
     },
     {
-        "Title": ,
-        "ISBN": ,
-        "author": , 
-        "genre": ,
-        "description": ,
-        "location": ,
-        "checked_out": true
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
     },
     {
-        "Title": ,
-        "ISBN": ,
-        "author": , 
-        "genre": ,
-        "description": ,
-        "location": ,
-        "checked_out": true
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
     },
     {
-        "Title": ,
-        "ISBN": ,
-        "author": , 
-        "genre": ,
-        "description": ,
-        "location": ,
-        "checked_out": true
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
     },
     {
-        "Title": ,
-        "ISBN": ,
-        "author": , 
-        "genre": ,
-        "description": ,
-        "location": ,
-        "checked_out": true
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
     },
     {
-        "Title": ,
-        "ISBN": ,
-        "author": , 
-        "genre": ,
-        "description": ,
-        "location": ,
-        "checked_out": true
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
     },
-
-]
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    },
+    {
+        "Title": "",
+        "ISBN": "",
+        "author": "", 
+        "genre": "",
+        "description": "",
+        "location": "",
+        "user_id": ""
+    }
+ ]
