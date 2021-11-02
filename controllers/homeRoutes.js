@@ -5,12 +5,10 @@ const withAuth = require("../utils/auth");
 
 
 router.get("/settings", withAuth, async (req, res) => {
-  console.log('settings page')
   try {
     const userData = await User.findByPk(req.session.user_id);
 
     const user = userData.get({ plain: true });
-
     res.render("settings", {
       ...user,
       logged_in: req.session.logged_in,
@@ -21,7 +19,6 @@ router.get("/settings", withAuth, async (req, res) => {
 });
 
 router.get("/login", (req, res) => {
-  console.log('################this')
   if (req.session.logged_in) {
     res.redirect("/dashboard");
     return;
@@ -31,7 +28,6 @@ router.get("/login", (req, res) => {
 });
 
 router.get("/", async (req, res) => {
-  console.log('home page')
   try {
     const bookData = await Book.findAll();
 

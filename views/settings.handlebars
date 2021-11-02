@@ -1,0 +1,24 @@
+
+{{> navbar}}
+<section class="container">
+    <h2>Settings</h2>
+  <div class="row">
+    <form class='m-auto'>
+      <div class="form-group">
+        <label for="name-update">Username:</label>
+        <input class="form-input form-control" type="text" id="name-update" value="{{username}}" />
+      </div>
+      <div class="form-group">
+        <label for="email-update">Email:</label>
+        <input class="form-input form-control" type="text" id="email-update"  value="{{email}}"/>
+      </div>
+      <div class="form-group">
+        <label for="password-update">Password:</label>
+        <input class="form-input form-control" type="password" id="password-update"  value="{{password}}"/>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Update</button>
+      </div>
+    </form>
+  </div>
+</section>
