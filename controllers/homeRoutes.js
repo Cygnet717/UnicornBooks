@@ -1,22 +1,15 @@
 const router = require("express").Router();
-const { Project, User } = require("../models"); // placeholder
-const withAuth = require("../utils/auth"); // placeholder
+const { Book, Checkout, Location, User } = require("../models");
+const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
   try {
-    const projectData = await Project.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ["name"],
-        },
-      ],
-    });
+    const bookData = await Book.findAll();
 
-    const projects = projectData.map((project) => project.get({ plain: true }));
+    const books = bookData.map((book) => book.get({ plain: true }));
 
     res.render("homepage", {
-      projects,
+      books,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -24,40 +17,36 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/project/:id", async (req, res) => {
+router.get("/user/:id", async (req, res) => {
   try {
-    const projectData = await Project.findByPk(req.params.id, {
+    const userData = await User.findByPk(req.params.id, {
       include: [
         {
-          model: User,
-          attributes: ["name"],
+          model: Book,
         },
       ],
-    });
-
-    const project = projectData.get({ plain: true });
-
-    res.render("project", {
-      ...project,
-      logged_in: req.session.logged_in,
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-router.get("/profile", withAuth, async (req, res) => {
-  try {
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ["password"] },
-      include: [{ model: Project }],
     });
 
     const user = userData.get({ plain: true });
 
-    res.render("profile", {
+    res.render("dashboard", {
       ...user,
-      logged_in: true,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get("/settings", withAuth, async (req, res) => {
+  try {
+    const userData = await User.findByPk(req.session.user_id);
+
+    const user = userData.get({ plain: true });
+
+    res.render("settings", {
+      ...user,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -66,7 +55,7 @@ router.get("/profile", withAuth, async (req, res) => {
 
 router.get("/login", (req, res) => {
   if (req.session.logged_in) {
-    res.redirect("/profile");
+    res.redirect("/dashboard");
     return;
   }
 

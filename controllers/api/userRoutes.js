@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const { User } = require("../../models");
+const withAuth = require("../../utils/auth");
 
 router.post("/", async (req, res) => {
   try {
@@ -16,6 +17,32 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.put("/:id", async (req, res) => { //re-add withAuth
+  User
+    .update(req.body)
+    .then((updatedUser) => {
+      res.status(200).json(updatedUser);
+    })
+    .catch((err) => res.json(err));
+});
+
+// delete user - DONE?
+router.delete("/:id", withAuth, async (req, res) => {
+  try {
+    const userData = await User.destroy({
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    });
+
+    res.status(200).json(userData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+// login user - DONE?
 router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
@@ -47,6 +74,7 @@ router.post("/login", async (req, res) => {
   }
 });
 
+//logout user - DONE?
 router.post("/logout", (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
