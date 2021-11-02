@@ -1,9 +1,12 @@
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">{{book_name}}</h5>
+<div class="card col-3 m-3" style="width: 18rem;">
+  <div class="card-body d-flex justify-content-around flex-column">
+    <h5 class="card-title text-center">{{book_name}}</h5>
     <p class="card-text">{{description}}</p>
-    //checked out
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
+    {{#if user_id}}
+    
+    <p class="card-link text-warning bg-dark p-2 text-center">Checked Out</p>
+    {{else}}
+    <a href="#" class="card-link bg-success text-white p-2 text-center">Available</a>
+    {{/if}}
   </div>
 </div>

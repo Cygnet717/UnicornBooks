@@ -1,0 +1,42 @@
+
+{{> navbar}}
+
+<section class='container mt-3'>
+  <div class="row border">
+    <ul class="nav nav-tabs ">
+      <li class="nav-item ml-3">
+        <div class="form-group form-check my-2">
+          <input type="checkbox" class="form-check-input" id="available">
+          <label class="form-check-label" for="available">Only Available</label>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Genera</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Location</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+  <div class='row border d-flex justify-content-around'>
+    {{#each books as |book|}}
+    {{> book}}
+    {{/each}}
+  </div>
+</section>
