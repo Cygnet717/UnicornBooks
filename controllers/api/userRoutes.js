@@ -16,23 +16,20 @@ router.post("/", async (req, res) => {
     res.status(400).json(err);
   }
 });
-
-router.put("/:id", async (req, res) => { //re-add withAuth
-  User
-    .update(req.body)
+//re-add withAuth, if error is pw not long enough <-- have browser check or use an error message
+router.put("/:id", async (req, res) => {
+  User.update(req.body, { where: { id: req.params.id } })
     .then((updatedUser) => {
       res.status(200).json(updatedUser);
     })
-    .catch((err) => res.json(err));
+    .catch((err) => res.status(400).json(err));
 });
 
-// delete user - DONE?
 router.delete("/:id", withAuth, async (req, res) => {
   try {
     const userData = await User.destroy({
       where: {
         id: req.params.id,
-        user_id: req.session.user_id,
       },
     });
 
