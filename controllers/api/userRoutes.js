@@ -3,8 +3,12 @@ const { User } = require("../../models");
 const withAuth = require("../../utils/auth");
 
 router.post("/", async (req, res) => {
+  console.log('--------start the try')
   try {
-    const userData = await User.create(req.body);
+    console.log('------------userdata---------------')
+    const userData = await User.create(
+      req.body,
+      );
 
     req.session.save(() => {
       req.session.user_id = userData.id;
@@ -12,6 +16,7 @@ router.post("/", async (req, res) => {
 
       res.status(200).json(userData);
     });
+    console.log('-------------here-------------')
   } catch (err) {
     res.status(400).json(err);
   }
