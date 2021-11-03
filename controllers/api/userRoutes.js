@@ -8,10 +8,6 @@ router.post("/", async (req, res) => {
     console.log('------------userdata---------------')
     const userData = await User.create(
       req.body,
-      {
-         raw: true,
-        nest: true
-      }
       );
 
     req.session.save(() => {
