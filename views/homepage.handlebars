@@ -10,23 +10,16 @@
           <label class="form-check-label" for="available">Only Available</label>
         </div>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Genera</a>
-        <div class="dropdown-menu">
-          {{#each genera as |gen|}}
-          <a class="dropdown-item" href="#">{{gen}}</a>
-          {{/each}}
-        </div>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Location</a>
-        <div class="dropdown-menu">
-          {{#each location as |loc|}}
-          <a class="dropdown-item" href="#">{{loc}}</a>
-          {{/each}}
-        </div>
-      </li>
+      <select id='selectGenera' class="">
+        <option class='autobiog' value="">Genra</option>
+        <option class='autobiog' value="Autobiography">Autobiography</option>
+        <option class='autobiog' value="Biography">Biography</option>
+        <option class='autobiog' value="Fantasy">Fantasy</option>
+        <option class='autobiog' value="Science Fiction">Science Fiction</option>
+        <option class='autobiog' value="Thriller">Thriller</option>
+        <option class='autobiog' value="Young Adult">Young Adult</option>
+      </select>
+      
 
     </ul>
   </div>
@@ -36,3 +29,4 @@
     {{/each}}
   </div>
 </section>
+<script src="/js/dropdown.js"></script>
