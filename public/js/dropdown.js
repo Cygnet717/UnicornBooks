@@ -1,25 +1,38 @@
-const selectGenera = document.querySelector('#selectGenera')
+const selectgenre = document.querySelector('#selectgenre')
 const selectLocation = document.querySelector('#selectLocation')
+const checkbox = document.querySelector('#availableBox')
 
 
-function sortByGenera (event) {
+async function sortBygenre (event) {
   const genre = event.target.value
   const response = await fetch(`/genre/${genre}`, {
-    method: 'POST',
-    body: JSON.stringify({genera: event.target.value}),
+    method: 'GET',
+    body: JSON.stringify({genre: event.target.value}),
     headers: { 'Content-Type': 'application/json' },
   })
   
 }
 
-function sortByLocation (event) {
+async function sortByLocation (event) {
   const location = event.target.value
   const response = await fetch(`/location/${location}`, {
-    method: 'POST',
-    body: JSON.stringify({genera: event.target.value}),
+    method: 'GET',
     headers: { 'Content-Type': 'application/json' },
   })
+  // const jsonRes = await response.json()
+  window.location.href = `/location/${location}`
 }
 
-selectGenera.addEventListener('change', sortByGenera)
+async function checkboxSort() {
+  console.log(this.checked);
+  
+  await fetch(`/checkbox`, {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+  })
+  .then(res => console.log(res))
+}
+
+selectgenre.addEventListener('change', sortBygenre)
 selectLocation.addEventListener('change', sortByLocation)
+checkbox.addEventListener('change', checkboxSort)

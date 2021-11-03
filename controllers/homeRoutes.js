@@ -2,16 +2,52 @@ const router = require("express").Router();
 const { Book, Checkout, Location, User } = require("../models");
 const withAuth = require("../utils/auth");
 
+// checkbox route
+router.get("/checkbox", async (req, res) => {
+  const bookData = await Book.findAll();
+  console.log('somthing``````````````````````````')
+  console.log(bookData)
+  console.log('somthing``````````````````````````')
+  const books = bookData.map((book) => book.get({ plain: true }));
+  console.log(books)
+  books.forEach((book) => {
+    if (book.user_id != null) {
+      book.classList.add("hide");
+    }
+  });
+  res.render("homepage", {
+    books,
+    logged_in: req.session.logged_in,
+  });
+});
 
-
-router.get("/settings", withAuth, async (req, res) => {
+// location route
+router.get("/location/:location", async (req, res) => {
+  console.log("-----------------------------work");
   try {
-    const userData = await User.findByPk(req.session.user_id);
+    const locationData = await Book.findAll({
+      where: { location_id: req.params.location },
+    });
 
-    const user = userData.get({ plain: true });
-    res.render("settings", {
-      ...user,
-      logged_in: req.session.logged_in,
+    const books = locationData.map((location) => location.get({ plain: true }));
+    console.log(books)
+    res.render("homepage", { books });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+// WORKS!! Yay!
+router.get("/genre/:genre", async (req, res) => {
+  console.log("Test");
+  try {
+    const bookGenreData = await Book.findAll({
+      where: { genre: req.params.genre },
+    });
+
+    const books = bookGenreData.map((book) => book.get({ plain: true }));
+
+    res.render("dashboard", {
+      books,
     });
   } catch (err) {
     res.status(500).json(err);

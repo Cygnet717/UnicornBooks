@@ -2,7 +2,6 @@ const router = require("express").Router();
 const { Book } = require("../../models");
 const withAuth = require("../../utils/auth");
 
-// FIX put route to change user id
 router.put("/:id", async (req, res) => {
   Book.update(req.body, { where: { id: req.params.id } })
     .then((updatedBookUser) => {

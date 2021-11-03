@@ -6,7 +6,7 @@ class Book extends Model {}
 Book.init(
   {
     isbn: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.BIGINT,
       allowNull: false,
     
     },
@@ -29,6 +29,7 @@ Book.init(
     },
     user_id: {
       type: DataTypes.INTEGER,
+      allowNull: true,
       references: {
         model: 'user',
         key: 'id',

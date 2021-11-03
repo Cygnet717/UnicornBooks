@@ -211,7 +211,7 @@
         "book_name": "Ender's Game" ,
         "isbn": 9780812550702,
         "author": "Orson Scott Card", 
-        "genre": null,
+        "genre": "Adventure",
         "description": "..Is Ender the general Earth needs? But Ender is not the only result of the genetic experiments. The war with the Buggers has been raging for a hundred years, and the quest for the perfect general has been underway for almost as long...",
         "location_id": 2,
         "user_id": null
@@ -290,7 +290,7 @@
     },
     {
         "book_name": "The Catcher in the Rye" ,
-        "isbn": null,
+        "isbn": 9780142408755,
         "author": "J. D. Salinger", 
         "genre": "Young Adults",
         "description": "The hero-narrator of The Catcher in the Rye is an ancient child of sixteen, a native New Yorker named Holden Caufield. Through circumstances that tend to preclude adult, secondhand description, he leaves his prep school in Pennsylvania and goes underground in New York City for three days.",
