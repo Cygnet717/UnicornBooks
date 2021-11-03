@@ -38,7 +38,7 @@ router.get("/location/:location", async (req, res) => {
 });
 // WORKS!! Yay!
 router.get("/genre/:genre", async (req, res) => {
-  console.log("Test");
+  console.log(req.params.genre);
   try {
     const bookGenreData = await Book.findAll({
       where: { genre: req.params.genre },
@@ -46,8 +46,8 @@ router.get("/genre/:genre", async (req, res) => {
 
     const books = bookGenreData.map((book) => book.get({ plain: true }));
 
-    res.render("dashboard", {
-      books,
+    res.render("homepage", {
+      books
     });
   } catch (err) {
     res.status(500).json(err);

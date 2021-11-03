@@ -5,12 +5,13 @@ const checkbox = document.querySelector('#availableBox')
 
 async function sortBygenre (event) {
   const genre = event.target.value
+  console.log(genre)
   const response = await fetch(`/genre/${genre}`, {
     method: 'GET',
-    body: JSON.stringify({genre: event.target.value}),
+    //body: JSON.stringify({genre: event.target.value}),
     headers: { 'Content-Type': 'application/json' },
   })
-  
+  window.location.href = `/genre/${genre}`
 }
 
 async function sortByLocation (event) {
