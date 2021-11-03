@@ -15,6 +15,7 @@ router.get("/checkbox", async (req, res) => {
 
   res.render("homepage", {
     books,
+    user_id: req.session.user_id,
     logged_in: req.session.logged_in,
   });
 });
@@ -29,6 +30,7 @@ router.get("/location/:location", async (req, res) => {
     const books = locationData.map((location) => location.get({ plain: true }));
     console.log(books)
     res.render("homepage", { books,
+      user_id: req.session.user_id,
       logged_in: req.session.logged_in, 
     });
   } catch (err) {
@@ -47,6 +49,7 @@ router.get("/genre/:genre", async (req, res) => {
 
     res.render("homepage", {
       books,
+      user_id: req.session.user_id,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -71,6 +74,7 @@ router.get("/", async (req, res) => {
     const books = bookData.map((book) => book.get({ plain: true }));
     res.render("homepage", {
       books,
+      user_id: req.session.user_id,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -78,20 +82,20 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("dashboard/:id", async (req, res) => {
+router.get("/dashboard/:id", async (req, res) => {
   try {
-    const userData = await User.findByPk(req.params.id, {
-      include: [
-        {
-          model: Book,
-        },
-      ],
-    });
-
-    const user = userData.get({ plain: true });
-
+    
+    const bookData = await Book.findAll(
+      {
+        where: {user_id: req.params.id}
+      }
+      );
+      console.log(bookData)
+    const books = bookData.map((book) => book.get({ plain: true }));
+      console.log(books)
     res.render("dashboard", {
-      ...user,
+      books,
+      user_id: req.session.user_id,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
