@@ -74,7 +74,7 @@
     },
     {
         "book_name": "Frankenstein" ,
-        "isbn": 978143,
+        "isbn": 9781435159624,
         "author": "Mary Shelley", 
         "genre": "Horror",
         "description": "Stepping far afield from his medical studies, Victor Frankenstein brings to life a human form he has fashioned from scavenged body parts. Horrified by his achievement, he turns his back on his creation, only to learn the danger of such neglect...",
@@ -83,7 +83,7 @@
     },
     {
         "book_name": "The Three Musketeers" ,
-        "isbn": 9781454,
+        "isbn": "9781454937180",
         "author": "Alexandre Dumas", 
         "genre": "Adventure",
         "description": "All for one and one for all! That’s the rallying cry of the Musketeers—guards of the French King—and the call to adventure for young readers enjoying their first taste of Dumas’ classic swashbuckler. Aramis, Athos, Porthos, and the not-quite-yet Musketeer D’Artagnan...",
@@ -92,7 +92,7 @@
     },
     {
         "book_name": "Life of Pi" ,
-        "isbn": 9780156,
+        "isbn": 9780156027328,
         "author": "Yann Martel", 
         "genre": "Adventure",
         "description": "The ship sinks. Pi finds himself alone in a lifeboat, his only companions a hyena, an orangutan, a wounded zebra, and Richard Parker, a 450-pound Bengal tiger. Soon the tiger has dispatched all but Pi, whose fear, knowledge, and cunning allow him to coexist with Richard Parker for 227 days while lost at sea. ",
@@ -101,7 +101,7 @@
     },
     {
         "book_name": "Jumper" ,
-        "isbn": 978076,
+        "isbn": 9780765378163,
         "author": "Steven Gould", 
         "genre": "Science Fiction",
         "description": "Davy can teleport. He first discovers his talent during a savage beating delivered by his abusive father, when Davy jumps instantaneously to the safest place he knows, his small-town public library. As his mother did so many years before, Davy vows never to go home again...",
@@ -110,7 +110,7 @@
     },
     {
         "book_name": "The Name of The Wind" ,
-        "isbn": 9780756,
+        "isbn": 9780756404741,
         "author": "Patrick Rothfuss", 
         "genre": "Fantasy",
         "description": "o begins a tale unequaled in fantasy literature—the story of a hero told in his own voice. It is a tale of sorrow, a tale of survival, a tale of one man’s search for meaning in his universe, and how that search, and the indomitable will that drove it, gave birth to a legend.  ",
@@ -119,7 +119,7 @@
     },
     {
         "book_name": "To Rescue the Republic: Ulysses S. Grant, the Fragile Union, and the Crisis of 1876" ,
-        "isbn": 63039544,
+        "isbn": 9780063039544,
         "author": "Bret Baier, Catherine Whitney", 
         "genre": "Biography",
         "description": "An epic history spanning the battlegrounds of the Civil War and the violent turmoil of Reconstruction to the forgotten electoral crisis that nearly fractured a reunited nation,",
@@ -128,7 +128,7 @@
     },
     {
         "book_name": "The Dark Hours" ,
-        "isbn": 6485647,
+        "isbn": 9780316485647,
         "author": "Michael Connelly", 
         "genre": "Thriller",
         "description": "There’s chaos in Hollywood at the end of the New Year’s Eve countdown. Working her graveyard shift, LAPD detective Renée Ballard waits out the traditional rain of lead as hundreds of revelers shoot their guns into the air",
@@ -137,7 +137,7 @@
     },
     {
         "book_name":"The Shining",
-        "isbn": 5806789, 
+        "isbn": 9780345806789, 
         "author": "Stephen King", 
         "genre": "Horror",
         "description": "Jack Torrance’s new job at the Overlook Hotel is the perfect chance for a fresh start. As the off-season caretaker at the atmospheric old hotel, he’ll have plenty of time to spend reconnecting with his family and working on his writing...",
@@ -146,7 +146,7 @@
     },
     {
         "book_name": "The Call of the Wild" ,
-        "isbn": 1321059,
+        "isbn": 9780141321059,
         "author": "Jack London", 
         "genre": "Adventure",
         "description": "The plot concerns a previously domesticated dog named Buck, whose primordial instincts return after a series of events leads to his serving as a sled dog in the Yukon. Buck learns from his experiences and becomes a pack-dominating feral beast...",
@@ -155,7 +155,7 @@
     },
     {
         "book_name": "1984" ,
-        "isbn": 524935,
+        "isbn": 9780451524935,
         "author": "George Orwell", 
         "genre": "Science Fiction",
         "description": "A startling and haunting novel, 1984 creates an imaginary world that is completely convincing from start to finish. No one can deny the novel’s hold on the imaginations of whole generations, or the power of its admonitions—a power that seems to grow, not lessen, with the passage of time.",
@@ -164,7 +164,7 @@
     },
     {
         "book_name": "The Way of Kings" ,
-        "isbn": 376671,
+        "isbn": 9780765376671,
         "author": "Brandon Sanderson", 
         "genre": "Fantasy",
         "description": "It has been centuries since the fall of the ten consecrated orders known as the Knights Radiant, but their Shardblades and Shardplate remain: mystical swords and suits of armor that transform ordinary men into near-invincible warriors. Men trade kingdoms for Shardblades. Wars were fought for them, and won by them.",
@@ -173,7 +173,7 @@
     },
     {
         "book_name": "Peril" ,
-        "isbn": 182915,
+        "isbn": 9781982182915,
         "author": "Bob Woodward, Robert Costa", 
         "genre": "Biography",
         "description": "The transition from President Donald J. Trump to President Joseph R. Biden Jr. stands as one of the most dangerous periods in American history.",
@@ -182,7 +182,7 @@
     },
     {
         "book_name": "Shelter in Place" ,
-        "isbn": 30247094,
+        "isbn": 9781250247094,
         "author": "Nora Roberts", 
         "genre": "Thriller",
         "description": "It was a typical evening at a mall outside Portland, Maine. Three teenage friends waited for the movie to start. A boy flirted with the girl selling sunglasses. Mothers and children shopped together, and the manager at the video-game store tended to customers. Then the shooters arrived.",
@@ -191,7 +191,7 @@
     },
     {
         "book_name": "Dracula" ,
-        "isbn": 5171428,
+        "isbn": 9781435171428,
         "author": "Bram Stoker", 
         "genre": "Horror",
         "description": "As fledgling English lawyer Jonathan Harker treks into the Carpathian Mountains to complete a real-estate transaction, frightened peasants warn him of horrible dangers that await him. Harker, terrified by eerie events along the way, finally meets his client, Count Dracula...",
@@ -200,7 +200,7 @@
     },
     {
         "book_name": "Hatchet" ,
-        "isbn": 6936473,
+        "isbn": 9781416936473,
         "author": "Gary Paulsen", 
         "genre": "Adventure",
         "description": "Thirteen-year-old Brian Robeson, haunted by his secret knowledge of his mother’s infidelity, is traveling by single-engine plane to visit his father for the first time since the divorce. When the plane crashes, killing the pilot, the sole survivor is Brian. He is alone in the Canadian wilderness...",
@@ -209,16 +209,16 @@
     },
     {
         "book_name": "Ender's Game" ,
-        "isbn": 12550702,
+        "isbn": 9780812550702,
         "author": "Orson Scott Card", 
-        "genre": "Science Fiction",
+        "genre": null,
         "description": "..Is Ender the general Earth needs? But Ender is not the only result of the genetic experiments. The war with the Buggers has been raging for a hundred years, and the quest for the perfect general has been underway for almost as long...",
         "location_id": 2,
         "user_id": null
     },
     {
         "book_name": "Assassin's Apprentice" ,
-        "isbn": 53573398,
+        "isbn": 9780553573398,
         "author": "Robin Hobb", 
         "genre": "Fantasy",
         "description": "As barbarous raiders ravage the coasts, Fitz is growing to manhood. Soon he will face his first dangerous, soul-shattering mission. And though some regard him as a threat to the throne, he may just be the key to the survival of the kingdom..",
@@ -227,7 +227,7 @@
     },
     {
         "book_name": "The Boys: A Memoir of Hollywood and Family" ,
-        "isbn": 3065246,
+        "isbn": 9780063065246,
         "author": "Ron and Clint Howard", 
         "genre": "Biography",
         "description": "...Together, Ron and Clint's parents gave them the steady foundation they needed to fulfill their Hollywood destiny...",
@@ -236,7 +236,7 @@
     },
     {
         "book_name": "The Butterfly Girl" ,
-        "isbn": 698179,
+        "isbn": 9780062698179,
         "author": "Rene Denfeld", 
         "genre": "Thriller",
         "description": "...As danger creeps closer, Naomi and Celia find echoes of themselves in one another, forcing them each to consider the question: Can you still be lost even when you’ve been found? But will they find the answer too late?",
@@ -245,7 +245,7 @@
     },
     {
         "book_name": "The Picture of Dorian Gray" ,
-        "isbn": 5216941,
+        "isbn": 9781545216941,
         "author": "Oscar Wilde", 
         "genre": "Horror",
         "description": "Dorian Gray is the subject of a full-length portrait in oil by Basil Hallward, an artist who is impressed and infatuated by Dorian's beauty; he believes that Dorian's beauty is responsible for the new mode in his art as a painter...",
@@ -254,7 +254,7 @@
     },
     {
         "book_name": "Around the World in 80 Days" ,
-        "isbn": 1024102,
+        "isbn": 9781545024102,
         "author": "Jules Verne", 
         "genre": "Adventure",
         "description": "...Phileas Fogg accepts the challenge to travel the globe in just eighty days. With his capable valet Passepartout Fogg embarks on his journey from Dover encountering a series of adventures in many wonderful and dangerous places of the world in a fantastic race against time.",
@@ -263,7 +263,7 @@
     },
     {
         "book_name": "Better Off Dead" ,
-        "isbn": 3359389,
+        "isbn": 9780593359389,
         "author": "Lee Child, Andrew Child", 
         "genre": "Thriller",
         "description": "...Reacher isn't one to back down from a fight. And when a shadowy crew raises the stakes, he won't hesitate to teach them a lesson: When you pick a fight with Reacher, you're better off dead.",
@@ -272,7 +272,7 @@
     },
     {
         "book_name": "The Mummy, or Ramses the Damned" ,
-        "isbn": 5369949,
+        "isbn": 9780345369949,
         "author": "Anne Rice", 
         "genre": "Horror",
         "description": "...But the pleasures Ramses enjoys with Julie cannot soothe him. Searing memories of his last reawakening, at the behest of Cleopatra, his beloved Queen of Egypt, burn in his immortal soul. And though he is immortal, he is still all too human...",
@@ -281,7 +281,7 @@
     },
     {
         "book_name": "Little Women" ,
-        "isbn": 408766,
+        "isbn": 9780142408766,
         "author": "Louisa May Alcott", 
         "genre": "Young Adults",
         "description": "Meg - the sweet-tempered one. Jo - the smart one. Beth - the shy one. Amy - the sassy one.Together they're the March sisters. Their father is away at war and times are difficult, but the bond between the sisters is strong...",
@@ -290,7 +290,7 @@
     },
     {
         "book_name": "The Catcher in the Rye" ,
-        "isbn": 46484946,
+        "isbn": null,
         "author": "J. D. Salinger", 
         "genre": "Young Adults",
         "description": "The hero-narrator of The Catcher in the Rye is an ancient child of sixteen, a native New Yorker named Holden Caufield. Through circumstances that tend to preclude adult, secondhand description, he leaves his prep school in Pennsylvania and goes underground in New York City for three days.",
@@ -299,7 +299,7 @@
     },
     {
         "book_name": "To Kill a Mockingbird" ,
-        "isbn": 9780060,
+        "isbn": 9780060935467,
         "author": "Harper Lee", 
         "genre": "Young Adult",
         "description": "A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice, it views a world of great beauty and savage inequities through the eyes of a young girl, as her father—a crusading local lawyer—risks everything to defend a black man unjustly accused of a terrible crime.",
@@ -308,7 +308,7 @@
     },
     {
         "book_name": "Lord of the Flies" ,
-        "isbn": 9780399,
+        "isbn": 9780399501487,
         "author": "William Golding", 
         "genre": "Young Adults",
         "description": "At the dawn of the next world war, a plane crashes on an uncharted island, stranding a group of schoolboys. At first, with no adult supervision, their freedom is something to celebrate. This far from civilization they can do anything they want...",
@@ -317,7 +317,7 @@
     },
     {
         "book_name" : "Crying In Hmart",
-        "isbn": 978052,
+        "isbn": 9780525657743,
         "author": "Michelle Zauner" ,
         "genre": "Non-Fiction",
         "description": " In this exquisite story of family, food, grief, and endurance, Michelle Zauner proves herself far more than a dazzling singer, songwriter, and guitarist. With humor and heart, she tells of growing up one of the few Asian American kids at her school in Eugene, Oregon; of struggling with her mother's particular, high expectations of her; of a painful adolescence",
@@ -326,7 +326,7 @@
     },
     {
         "book_name" : "A Swim In A Pond In The Rain",
-        "isbn": 25657743,
+        "isbn": 9780525657743,
         "author": "George Saunders" ,
         "genre": "Non-Fiction",
         "description": " NEW YORK TIMES BESTSELLER • From the Booker Prize–winning author of Lincoln in the Bardo and Tenth of December comes a literary master class on what makes great stories work and what they can tell us about ourselves—and our world today.",
@@ -335,7 +335,7 @@
     },
     {
         "book_name" : "Think Again",
-        "isbn": 878106,
+        "isbn": 9781984878106,
         "author": "Adam Grant" ,
         "genre": "Non-Fiction",
         "description": " Intelligence is usually seen as the ability to think and learn, but in a rapidly changing world, there's another set of cognitive skills that might matter more: the ability to rethink and unlearn. In our daily lives, too many of us favor the comfort of conviction over the discomfort of doubt. We listen to opinions that make us feel good, instead of ideas that make us think hard. ",
@@ -344,7 +344,7 @@
     },
     {
         "book_name" : "Having and Being Had",
-        "isbn": 984856029,
+        "isbn": 9781984856029,
         "author": "Eula Biss" ,
         "genre": "Non-Fiction",
         "description": " My adult life can be divided into two distinct parts, Eula Biss writes, the time before I owned a washing machine and the time after. Having just purchased her first home, the poet and essayist now embarks on a provocative exploration of the value system she has bought into. Through a series of engaging exchanges--in libraries and laundromats, over barstools and backyard fences--she examines our assumptions about class and property and the ways we internalize the demands of capitalism",
@@ -353,7 +353,7 @@
     },
     {
         "book_name" : "The Dragons The Giant The Women",
-        "isbn": 4450314,
+        "isbn": 9781644450314,
         "author": "Wayetu Moore" ,
         "genre": "Non-Fiction",
         "description": "When Wayétu Moore turns five years old, her father and grandmother throw her a big birthday party at their home in Monrovia, Liberia, but all she can think about is how much she misses her mother, who is working and studying in faraway New York. Before she gets the reunion her father promised her, war breaks out in Liberia. The family is forced to flee their home on foot, walking and hiding for three weeks until they arrive in the village of Lai.",

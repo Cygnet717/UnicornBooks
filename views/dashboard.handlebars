@@ -1,12 +1,7 @@
-{{> dashNav}}
-
-
-
-<section class='container mt-3'>
-   <div class='row border d-flex justify-content-around'>
+<section class='container-fluid'>
+  <div class='row'>
     {{#each books as |book|}}
-    {{> userBook}}
+      {{> book}}
     {{/each}}
   </div>
 </section>
-
