@@ -18,6 +18,7 @@ Location.init(
     location_address: {
       type: DataTypes.STRING,
       allowNull: false,
+      defaultValue: 'West'
     },
   },
   {
