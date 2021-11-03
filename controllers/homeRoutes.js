@@ -65,10 +65,10 @@ router.get("/login", (req, res) => {
 
 router.get("/", async (req, res) => {
   try {
-    const bookData = await Book.findAll();
-
+    const bookData = await Book.findAll({
+      include: Location
+    });
     const books = bookData.map((book) => book.get({ plain: true }));
-
     res.render("homepage", {
       books,
       logged_in: req.session.logged_in,

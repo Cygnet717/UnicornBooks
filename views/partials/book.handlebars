@@ -2,7 +2,7 @@
   <div class="card-body d-flex justify-content-around flex-column">
     <h5 class="card-title text-center">{{book_name}}</h5>
     <p class="card-text">{{description}}</p>
-    <p>Get this book at: {{location}}</p>
+    <p>Get this book at: {{location.location_name}}{{location.location_address}}</p>
     {{#if user_id}}
     
     <p class="card-link text-warning bg-dark p-2 text-center">Checked Out</p>
