@@ -5,16 +5,14 @@ const withAuth = require("../utils/auth");
 // checkbox route
 router.get("/checkbox", async (req, res) => {
   const bookData = await Book.findAll();
-  console.log('somthing``````````````````````````')
-  console.log(bookData)
-  console.log('somthing``````````````````````````')
-  const books = bookData.map((book) => book.get({ plain: true }));
-  console.log(books)
-  books.forEach((book) => {
-    if (book.user_id != null) {
-      book.classList.add("hide");
+  const allBooks = bookData.map((book) => book.get({ plain: true }));
+  const books = []
+  allBooks.forEach((book) => {
+    if (book.user_id === null) {
+      books.push(book)
     }
   });
+
   res.render("homepage", {
     books,
     logged_in: req.session.logged_in,
@@ -23,7 +21,6 @@ router.get("/checkbox", async (req, res) => {
 
 // location route
 router.get("/location/:location", async (req, res) => {
-  console.log("-----------------------------work");
   try {
     const locationData = await Book.findAll({
       where: { location_id: req.params.location },
@@ -31,7 +28,9 @@ router.get("/location/:location", async (req, res) => {
 
     const books = locationData.map((location) => location.get({ plain: true }));
     console.log(books)
-    res.render("homepage", { books });
+    res.render("homepage", { books,
+      logged_in: req.session.logged_in, 
+    });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -47,7 +46,8 @@ router.get("/genre/:genre", async (req, res) => {
     const books = bookGenreData.map((book) => book.get({ plain: true }));
 
     res.render("homepage", {
-      books
+      books,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -78,7 +78,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/:id", async (req, res) => {
+router.get("dashboard/:id", async (req, res) => {
   try {
     const userData = await User.findByPk(req.params.id, {
       include: [
