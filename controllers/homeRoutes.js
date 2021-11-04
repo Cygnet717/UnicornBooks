@@ -4,7 +4,9 @@ const withAuth = require("../utils/auth");
 
 // checkbox route
 router.get("/checkbox", async (req, res) => {
-  const bookData = await Book.findAll();
+  const bookData = await Book.findAll({
+    include: Location
+  });
   const allBooks = bookData.map((book) => book.get({ plain: true }));
   const books = []
   allBooks.forEach((book) => {
@@ -25,6 +27,7 @@ router.get("/location/:location", async (req, res) => {
   try {
     const locationData = await Book.findAll({
       where: { location_id: req.params.location },
+      include: Location
     });
 
     const books = locationData.map((location) => location.get({ plain: true }));
@@ -44,6 +47,7 @@ router.get("/genre/:genre", async (req, res) => {
   try {
     const bookGenreData = await Book.findAll({
       where: { genre: req.params.genre },
+      include: Location
     });
 
     const books = bookGenreData.map((book) => book.get({ plain: true }));
