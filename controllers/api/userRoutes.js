@@ -2,10 +2,9 @@ const router = require("express").Router();
 const { User } = require("../../models");
 const withAuth = require("../../utils/auth");
 
+//new user route
 router.post("/", async (req, res) => {
-  console.log('--------start the try')
   try {
-    console.log('------------userdata---------------')
     const userData = await User.create(
       req.body,
       );
@@ -16,13 +15,16 @@ router.post("/", async (req, res) => {
 
       res.status(200).json(userData);
     });
-    console.log('-------------here-------------')
   } catch (err) {
     res.status(400).json(err);
   }
 });
+
 //re-add withAuth, if error is pw not long enough <-- have browser check or use an error message
+
+//update user route
 router.put("/:id", async (req, res) => {
+  console.log('updating user')
   User.update(req.body, { where: { id: req.params.id } })
     .then((updatedUser) => {
       res.status(200).json(updatedUser);
@@ -30,6 +32,7 @@ router.put("/:id", async (req, res) => {
     .catch((err) => res.status(400).json(err));
 });
 
+//delete user route
 router.delete("/:id", withAuth, async (req, res) => {
   try {
     const userData = await User.destroy({
@@ -44,7 +47,7 @@ router.delete("/:id", withAuth, async (req, res) => {
   }
 });
 
-// login user - DONE?
+// login user - DONE
 router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
