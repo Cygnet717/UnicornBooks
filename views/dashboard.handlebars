@@ -1,12 +1,14 @@
+
 {{> dashNav}}
 
 
 
 <section class='container mt-3'>
-
-  <div class='row border d-flex justify-content-around'>
+  <h2 class='row'>My Books</h2>
+  <div class='row border d-flex justify-content-around returnButton'>
     {{#each books as |book|}}
     {{> userBook}}
     {{/each}}
   </div>
 </section>
+<script src='/js/returnBook.js'></script>

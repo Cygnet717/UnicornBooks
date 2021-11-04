@@ -5,12 +5,13 @@ const checkbox = document.querySelector('#availableBox')
 
 async function sortBygenre (event) {
   const genre = event.target.value
+  console.log(genre)
   const response = await fetch(`/genre/${genre}`, {
     method: 'GET',
-    body: JSON.stringify({genre: event.target.value}),
+    //body: JSON.stringify({genre: event.target.value}),
     headers: { 'Content-Type': 'application/json' },
   })
-  
+  window.location.href = `/genre/${genre}`
 }
 
 async function sortByLocation (event) {
@@ -21,16 +22,20 @@ async function sortByLocation (event) {
   })
   // const jsonRes = await response.json()
   window.location.href = `/location/${location}`
+
 }
 
 async function checkboxSort() {
-  console.log(this.checked);
+  if(this.checked){
+    const response = await fetch(`/checkbox`, {
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+    })
   
-  await fetch(`/checkbox`, {
-    method: "GET",
-    headers: { "Content-Type": "application/json" },
-  })
-  .then(res => console.log(res))
+    window.location.href = `/checkbox`
+  } else {
+    window.location.href = `/`
+  }
 }
 
 selectgenre.addEventListener('change', sortBygenre)

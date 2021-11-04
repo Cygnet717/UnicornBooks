@@ -5,25 +5,23 @@ const withAuth = require("../utils/auth");
 // checkbox route
 router.get("/checkbox", async (req, res) => {
   const bookData = await Book.findAll();
-  console.log('somthing``````````````````````````')
-  console.log(bookData)
-  console.log('somthing``````````````````````````')
-  const books = bookData.map((book) => book.get({ plain: true }));
-  console.log(books)
-  books.forEach((book) => {
-    if (book.user_id != null) {
-      book.classList.add("hide");
+  const allBooks = bookData.map((book) => book.get({ plain: true }));
+  const books = []
+  allBooks.forEach((book) => {
+    if (book.user_id === null) {
+      books.push(book)
     }
   });
+
   res.render("homepage", {
     books,
+    user_id: req.session.user_id,
     logged_in: req.session.logged_in,
   });
 });
 
 // location route
 router.get("/location/:location", async (req, res) => {
-  console.log("-----------------------------work");
   try {
     const locationData = await Book.findAll({
       where: { location_id: req.params.location },
@@ -31,14 +29,17 @@ router.get("/location/:location", async (req, res) => {
 
     const books = locationData.map((location) => location.get({ plain: true }));
     console.log(books)
-    res.render("homepage", { books });
+    res.render("homepage", { books,
+      user_id: req.session.user_id,
+      logged_in: req.session.logged_in, 
+    });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 // WORKS!! Yay!
 router.get("/genre/:genre", async (req, res) => {
-  console.log("Test");
+  console.log(req.params.genre);
   try {
     const bookGenreData = await Book.findAll({
       where: { genre: req.params.genre },
@@ -46,8 +47,10 @@ router.get("/genre/:genre", async (req, res) => {
 
     const books = bookGenreData.map((book) => book.get({ plain: true }));
 
-    res.render("dashboard", {
+    res.render("homepage", {
       books,
+      user_id: req.session.user_id,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -65,12 +68,13 @@ router.get("/login", (req, res) => {
 
 router.get("/", async (req, res) => {
   try {
-    const bookData = await Book.findAll();
-
+    const bookData = await Book.findAll({
+      include: Location
+    });
     const books = bookData.map((book) => book.get({ plain: true }));
-
     res.render("homepage", {
       books,
+      user_id: req.session.user_id,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -78,20 +82,20 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/dashboard/:id", async (req, res) => {
   try {
-    const userData = await User.findByPk(req.params.id, {
-      include: [
-        {
-          model: Book,
-        },
-      ],
-    });
-
-    const user = userData.get({ plain: true });
-
+    
+    const bookData = await Book.findAll(
+      {
+        where: {user_id: req.params.id}
+      }
+      );
+      console.log(bookData)
+    const books = bookData.map((book) => book.get({ plain: true }));
+      console.log(books)
     res.render("dashboard", {
-      ...user,
+      books,
+      user_id: req.session.user_id,
       logged_in: req.session.logged_in,
     });
   } catch (err) {

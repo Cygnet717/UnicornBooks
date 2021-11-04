@@ -3,7 +3,7 @@
         "book_name": "Dune" ,
         "isbn": 9781101,
         "author": "Frank Herbert", 
-        "genre_id": "Science Fiction" ,
+        "genre": "Science Fiction" ,
         "description": "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness.",
         "location_id": 1,
         "user_id": null
@@ -57,7 +57,7 @@
         "book_name": "Big Shot (Diary of a Wimpy Kid Book 16)" ,
         "isbn":  9781419,
         "author": "Jeff Kinney", 
-        "genre": "Young Adult",
+        "genre": "Young Adults",
         "description": "In Big Shot, book 16 of the Diary of a Wimpy Kid series from #1 international bestselling author Jeff Kinney, Greg Heffley and sports just don’t mix. After a disastrous field day competition at school, Greg decides that when it comes to his athletic career, he’s officially retired. But after his mom urges him to give sports one more chance, he reluctantly agrees to sign up for basketball.",
         "location_id": 1,
         "user_id": 3
@@ -301,7 +301,7 @@
         "book_name": "To Kill a Mockingbird" ,
         "isbn": 9780060935467,
         "author": "Harper Lee", 
-        "genre": "Young Adult",
+        "genre": "Young Adults",
         "description": "A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice, it views a world of great beauty and savage inequities through the eyes of a young girl, as her father—a crusading local lawyer—risks everything to defend a black man unjustly accused of a terrible crime.",
         "location_id": 2,
         "user_id": null
