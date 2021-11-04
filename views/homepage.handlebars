@@ -31,10 +31,11 @@
 
     </ul>
   </div>
-  <div class='row border d-flex justify-content-around'>
+  <div class='row border d-flex justify-content-around checkoutButton' data-user_id={{user_id}}>
     {{#each books as |book|}}
     {{> book}}
     {{/each}}
   </div>
 </section>
 <script src="/js/dropdown.js"></script>
+<script src="/js/checkout.js"></script>

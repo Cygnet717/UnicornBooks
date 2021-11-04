@@ -40,7 +40,11 @@ router.delete("/:id", withAuth, async (req, res) => {
         id: req.params.id,
       },
     });
-
+    
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+    
     res.status(200).json(userData);
   } catch (err) {
     res.status(500).json(err);
