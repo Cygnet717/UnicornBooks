@@ -14,7 +14,7 @@ const loginFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/');
     } else {
-      alert('Failed to log in');
+      alert('Wrong email or password');
       
     }
   }
@@ -37,7 +37,7 @@ const signupFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/');
     } else {
-      alert('Failed to sign up.');
+      alert('Password must be 8 characters long.');
     }
   }
 };
