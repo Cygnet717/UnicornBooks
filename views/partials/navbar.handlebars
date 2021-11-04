@@ -9,8 +9,11 @@
       <li class="nav-item">
         <a class="nav-link" href="/">Home</a>
       </li>
+      
       <li class="nav-item">
+        {{#if logged_in}}
         <a class="nav-link" href="/dashboard/{{user_id}}">Dashboard</a>
+          {{/if}}
       </li>
       <li class="nav-item">
         <a class="nav-link" id="inout"

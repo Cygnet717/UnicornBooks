@@ -9,6 +9,7 @@ async function returnBook(event){
     console.log(book_id)
     const response = await fetch(`/api/books/${book_id}`, {
       method: 'PUT',
+      body: JSON.stringify({user_id: null}),
       headers: { 'Content-Type': 'application/json' },
     })
     if(response.ok){
