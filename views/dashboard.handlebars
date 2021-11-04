@@ -1,14 +1,18 @@
 
 {{> dashNav}}
-
-
-
 <section class='container mt-3'>
   <h2 class='row'>My Books</h2>
-  <div class='row border d-flex justify-content-around returnButton'>
+  <div class='row border d-flex justify-content-around returnButton bg-dark'>
     {{#each books as |book|}}
     {{> userBook}}
     {{/each}}
+    {{#if books}}
+    {{else}}
+    <div class="d-flex flex-column align-item-center">
+      <p class="text-center">...it's looking a little empty in here...</p>
+      <h1>Go find your next favorite! 📚🦄</h1>
+    </div>
+    {{/if}}
   </div>
 </section>
 <script src='/js/returnBook.js'></script>

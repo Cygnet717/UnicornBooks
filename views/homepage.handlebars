@@ -1,13 +1,13 @@
 
 {{> navbar}}
 
-<section class='container mt-3'>
-  <div class="row border">
+<section class='container mt-3 mb-5'>
+  <div class="row bg-dark">
     <ul class="nav nav-tabs ">
       <li class="nav-item ml-3">
         <div class="form-group form-check my-2">
           <input type="checkbox" class="form-check-input" id="availableBox">
-          <label class="form-check-label" for="available">Only Available</label>
+          <label class="form-check-label unicorn-text-color mx-3" for="available">Only Available</label>
         </div>
       </li>
       <select id='selectgenre'>
@@ -31,7 +31,7 @@
 
     </ul>
   </div>
-  <div class='row border d-flex justify-content-around checkoutButton' data-user_id={{user_id}}>
+  <div class='row border d-flex justify-content-around checkoutButton bg-dark' data-user_id={{user_id}}>
     {{#each books as |book|}}
     {{> book}}
     {{/each}}
