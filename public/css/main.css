@@ -2,6 +2,10 @@
   display: none;
 }
 
+a:hover {
+	cursor:pointer;
+}
+
 .dashboard-color {
 	background-color: #05F29B;
 }
