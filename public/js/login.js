@@ -1,6 +1,6 @@
+//initate login
 const loginFormHandler = async (event) => {
   event.preventDefault();
-
   const email = document.querySelector('#email-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
   
@@ -15,14 +15,13 @@ const loginFormHandler = async (event) => {
       document.location.replace('/');
     } else {
       alert('Wrong email or password');
-      
     }
   }
 };
 
+//initiate new user
 const signupFormHandler = async (event) => {
   event.preventDefault();
-
   const username = document.querySelector('#name-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();

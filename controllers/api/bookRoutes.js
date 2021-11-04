@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const { Book } = require("../../models");
-const withAuth = require("../../utils/auth");
 
 //api/books
 router.put("/:id", async (req, res) => {

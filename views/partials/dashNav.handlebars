@@ -1,19 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-      <h1><img src='/images/UnicornLogo.png' style='height: 80px'/></h1>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
+<nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-dark">
+  <h1><img src='/images/UnicornLogo.png' style='height: 80px'/></h1>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link unicorn-text-color" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/settings">Settings</a>
+        <a class="nav-link unicorn-text-color" href="/settings">Settings</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="inout"
+        <a class="nav-link unicorn-text-color" id="inout"
         {{#if logged_in}}
          href="#">Logout
         {{else}}
@@ -21,8 +17,13 @@
          {{/if}}
          </a>
       </li>
-      
     </ul>
   </div>
+  {{#if logged_in}}
+  <h2 class="unicorn-text-color">Welcome {{username}}</h2>
+  {{/if}}
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 </nav>
 <script src="/js/logout.js"></script>

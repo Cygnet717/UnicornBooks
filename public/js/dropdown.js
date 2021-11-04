@@ -2,29 +2,28 @@ const selectgenre = document.querySelector('#selectgenre')
 const selectLocation = document.querySelector('#selectLocation')
 const checkbox = document.querySelector('#availableBox')
 
-
+//initate sort by genre
 async function sortBygenre (event) {
   const genre = event.target.value
-  console.log(genre)
   const response = await fetch(`/genre/${genre}`, {
     method: 'GET',
-    //body: JSON.stringify({genre: event.target.value}),
     headers: { 'Content-Type': 'application/json' },
   })
   window.location.href = `/genre/${genre}`
 }
 
+//initate sort by location
 async function sortByLocation (event) {
   const location = event.target.value
   const response = await fetch(`/location/${location}`, {
     method: 'GET',
     headers: { 'Content-Type': 'application/json' },
   })
-  // const jsonRes = await response.json()
   window.location.href = `/location/${location}`
 
 }
 
+//initate sort with checkbox
 async function checkboxSort() {
   if(this.checked){
     const response = await fetch(`/checkbox`, {
