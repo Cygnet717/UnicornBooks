@@ -11,6 +11,7 @@ router.post("/", async (req, res) => {
 
     req.session.save(() => {
       req.session.user_id = userData.id;
+      req.session.username = userData.username;
       req.session.logged_in = true;
 
       res.status(200).json(userData);
@@ -20,11 +21,8 @@ router.post("/", async (req, res) => {
   }
 });
 
-//re-add withAuth, if error is pw not long enough <-- have browser check or use an error message
-
 //update user route
 router.put("/:id", async (req, res) => {
-  console.log('updating user')
   User.update(req.body, { where: { id: req.params.id } })
     .then((updatedUser) => {
       res.status(200).json(updatedUser);
@@ -51,11 +49,10 @@ router.delete("/:id", withAuth, async (req, res) => {
   }
 });
 
-// login user - DONE
+// login user route
 router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
-
     if (!userData) {
       res
         .status(400)
@@ -64,7 +61,6 @@ router.post("/login", async (req, res) => {
     }
 
     const validPassword = await userData.checkPassword(req.body.password);
-
     if (!validPassword) {
       res
         .status(400)
@@ -74,8 +70,8 @@ router.post("/login", async (req, res) => {
 
     req.session.save(() => {
       req.session.user_id = userData.id;
+      req.session.username = userData.username;
       req.session.logged_in = true;
-
       res.json({ user: userData, message: "You are now logged in!" });
     });
   } catch (err) {
@@ -83,7 +79,7 @@ router.post("/login", async (req, res) => {
   }
 });
 
-//logout user - DONE?
+//logout user route
 router.post("/logout", (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {

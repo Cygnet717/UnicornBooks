@@ -1,11 +1,10 @@
-
+//initate update user
 const updateUserHandler = async () => {
   const user_id = document.querySelector('#name-update').getAttribute('data-user_id');
   const username = document.querySelector('#name-update').value.trim();
   const email = document.querySelector('#email-update').value.trim();
  
   if (username && email) {
-   
     const response = await fetch(`/api/users/${user_id}`, {
       method: 'PUT',
       body: JSON.stringify({ username, email }),
@@ -20,7 +19,7 @@ const updateUserHandler = async () => {
   }
 }
 
-
+//initate delete user
 const deleteUserHandler = async () => {
  const user_id = document.querySelector('#name-update').getAttribute('data-user_id')
   
@@ -28,14 +27,12 @@ const deleteUserHandler = async () => {
   method: 'DELETE',
   headers: { 'Content-Type': 'application/json' },
 });
-
 if (response.ok) {
   document.location.replace(`/`);
 } else {
   alert('Failed to update.');
 }
 }
-
 
 document
   .querySelector('#updateUser')
